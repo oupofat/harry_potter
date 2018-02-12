@@ -1,14 +1,48 @@
+/*This is how you write a comment in CSS.*/
+
+/*Write some comments in your code to show where your different sections are in the code... */
+
 body {
     background-color: lightgrey;
-    font-family: 'Risque', cursive;
+
 }
 
+.navbar {
+    list-style-type: none;
+    font-size: 25px;
+    float: left;
+    position: fixed;
+    border: 1px solid #555;
+    background-color: #f1f1f1;
+    padding: inherit;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    color: red;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+
+}
+
+/* This section has the img of the horcruxes as well as the writing.
+*/
 
 .horcruxes {
     color: darkred;
     text-align: center;
     font-size: 75px;
+    font-family: 'Risque', cursive;
 }
+
+
 
 .img1 {
     display: block;
@@ -18,14 +52,21 @@ body {
     padding: 10px;
 }
 
-h2 {
+/* This next section has the half blood prince img along with text and a link to the book at amazon
+*/
+
+.half {
     text-align: center;
     font-size: 60px;
     color: darkred;
+    font-family: 'Risque', cursive;
 }
 
 .favorite {
+    text-align: center;
     font-size: 45px;
+    border-bottom: 10px solid black;
+    font-family: 'Slabo 27px', serif;
 }
 
 .img2 {
@@ -36,32 +77,91 @@ h2 {
     padding: 0px;
 }
 
-p {
+
+
+.text {
     text-align: center;
+    font-family: 'Slabo 27px', serif;
+    font-size: 35px;
+}
+
+.book {
+    text-align: center
 }
 
 a:hover {
     color: purple;
 }
 
-h3 {
+/* This section contains my favorite horcruxes along with a list of them
+*/
+
+.favhor {
     text-align: center;
     font-size: 40px;
     text-decoration: underline;
     text-decoration-color: black;
+    font-family: 'Risque', cursive;
 }
 
-ol {
+.horcrux {
     text-align: center;
     font-size: 22px;
     list-style-position: inside;
 
 }
 
-h4 {
-    text-align: center;
-    font-size: 30px;
-}
+/* This section contains the characters of the half blood prince along with a list.
+*/
+
 .characters {
-    list-style-type: lower-alpha;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Risque', cursive;
+}
+
+.characters_name {
+    border-collapse: collapse;
+}
+
+.characters_name,
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    width: auto;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: orangered;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: darkred;
+}
+
+.gray {
+    color: lightyellow;
+}
+
+/* this section has a link to wiki page about snape
+*/
+
+.Snape {
+    text-align: center
+}
+
+/* This section has copyright and email information.
+*/
+
+.copyright {
+    font-size: 25px;
+    color: black;
 }
