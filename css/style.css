@@ -1,0 +1,67 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Risque', cursive;
+}
+
+
+.horcruxes {
+    color: darkred;
+    text-align: center;
+    font-size: 75px;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    border-width: 5px;
+    border-style: double;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: darkred;
+}
+
+.favorite {
+    font-size: 45px;
+}
+
+.img2 {
+    display: block;
+    margin: auto;
+    width: 40%;
+    border: 2px solid black;
+    padding: 0px;
+}
+
+p {
+    text-align: center;
+}
+
+a:hover {
+    color: purple;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+ol {
+    text-align: center;
+    font-size: 22px;
+    list-style-position: inside;
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+.characters {
+    list-style-type: lower-alpha;
+}
