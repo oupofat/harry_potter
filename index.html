@@ -3,155 +3,189 @@
 
 <head>
 
-
     <title>The horcurxes of Voldemort</title>
+
+    <!Try to break up the code with headings... see my example-->
+
+    <!--Meta Tags-->
     <meta charset="UTF-8">
     <meta name="Kris Hays Harry Potter page" content="">
     <meta name="keywords" content="">
+
+    <!-- CSS and Bootstap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Add your bootstrap link here. Don't forget to add the JS and jQuery script links at the bottom. It won't work without that.  Think this is right?????-->
+
+    <!--Icons and Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
 
 </head>
 
-<!--Time to experiment with fonts. Usually, you want to pick a decorative font - like you did - just for titles. Then a regular text font for the rest of the page. Go to Google Fonts and pick a second font. Add the font. Change everything that isn't a title or a heading to the second font.   done!!!!!!!-->
-
-
-
 
 <body>
-    <ul class="navbar">
-        <li><a href="#section1">Horcruxes</a></li>
-        <li><a href="#section2">Half Blood Prince</a></li>
-        <li><a href="#section3">My favorite Horcruxes</a></li>
-        <li><a href="#section4">Characters</a></li>
-        <li><a href="#email">Contact me here</a></li>
-    </ul>
-    <p id="section1"></p>
-    <h1 class="horcruxes">
-        The Horcruxes of Voldemort
-    </h1>
-    <img class="img1" src="imagines/horcruxs.jpg" alt="Horcruxes">
-    <div>
-        <p class="text">
-            This is the 7 Horcruxes of Voldemort
-        </p>
+    <!--Your nav bar is fixed at the right hand side. And it is vertical. That's not a problem. But the way you styled this website makes it a problem  because it is covering the content at the top - the title and part of the image. The nav bar is also really big. It should be smaller. Also, your nav bar is not wrapped in divs with classes. Now that you are using Bootstrap, that's very important. Use proper indentation. We won't style the nav in Bootstrap because Bootstrap has its own navigation. We'll do that later. Play around with the size and style of the nav bar so that it doesn't block the title. Think thats better looks good on my screen???? -->
+    <nav class="navbar navbar-inverse navbar navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">The Horcruxes of Voldemort</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#section1">Horcruxes</a></li>
+                <li><a href="#section2">Half Blood Prince</a></li>
+                <li><a href="#section3">My favorite Horcruxes</a></li>
+                <li><a href="#section4">Characters</a></li>
+                <li><a href="#email">Contact me here</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!--This is a different section and should be blocked off with divs. I will put the bootstrap heirarchy in here so you can see it - then you need to do that in all the other sections. I am also making the formatting a little cleaner. As the code gets longer and longer it will get hard to read if you aren't consistent. -->
+
+    <div class="section1">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--I'm not sure why you have this P tag here. There is nothing in it. Why did you put a section id on it?Done!!!! I took it out of my orginal after I sent this one to you-->
+                <h1 class="horcruxes">The Horcruxes of Voldemort</h1>
+                <!--Look up how to make an image responsive with Bootstrap.-->
+
+                <img class="img-responsive img1" src="imagines/horcruxs.jpg" alt="Horcruxes">
+
+                <p class="text">This is the 7 Horcruxes of Voldemort</p>
+            </div>
+        </div>
     </div>
 
-
-    <!--Give this div a class. Remeber, it is a "section" wrapper. done!!!!!!!-->
+    <!-- In this section, start by cleaning it up and adding the Bootstrap structure. Use the bootstap classes, but also keep or add your own for styling. Usign Bootstrap, make three colms to put the images in. Make col a size 3, the second a size 6, and the third a size 3. Now use three images instead of 1. In the first col put an image of Harry from the movie. Keep the image you have for the second col, and put an image of Snape in the last col. Size the image of Harry and Snape to be the same and smaller than the middle image. Now, make the images responsive with bootstrap. -->
     <div class="blood prince">
-        <h2 class="half">
-            <p id="section2">
-                Half Blood Prince
-            </p>
-        </h2>
-        <a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince" target="_blank"> <img class="img2" src="imagines/halfbloodprince.jpg" alt="halfbloodprince"> </a>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="half">
+                    <p id="section2">
+                        Half Blood Prince
+                    </p>
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <img class="img-responsive" src="imagines/harry_potter.jpg">
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <img class="img-responsive" src="imagines/halfbloodprince.jpg">
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <img class="img-responsive" src="imagines/snape.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="favorite">This is my <strong>favorite</strong> book because it was the start of the war!</p>
+                </div>
+            </div>
 
-        <p class="favorite">This is my <strong>favorite</strong> book because it was the start of the war!</p>
-    </div>
+            <!--Add the Bootstrap structure and classes. Turn this into a Boostrap List Group. Make the first item an Active item. Restyle this list so that the list title is the red color. Then make the items in the list a larger font size. Make the line with the link larger too. -->
 
-    <!--If you are putting in a div here on line 54 - why is it wrapped only around the h3? Make it wrap aroudn a section - the h3, ol, and p. Give it a class name. Done!!!!!!!!-->
-    <div class="favorite_horcruxes">
-        <h3 class="favhor">
-            <p id="section3">
-                Favorite Horcruxes
-            </p>
-        </h3>
-        <ol class="horcrux">
-            <li><strong>Locket</strong></li>
-            <li><strong>Diary</strong></li>
-            <li><strong>Ring</strong></li>
-        </ol>
-    </div>
+            <div class="favorite_horcruxes container">
+                <h3 class="favhor list-group-item">
+                    <p id="section3">
+                        Favorite Horcruxes
+                    </p>
+                </h3>
+                <div class="horcrux">
+                    <a href="http://harrypotter.wikia.com/wiki/Slytherin%27s_Locket" target="_blank" class="list-group-item active"><strong>Locket</strong></a>
+                    <a href="http://harrypotter.wikia.com/wiki/T._M._Riddle%27s_Diary" class="list-group-item" target="_blank"><strong>Diary</strong></a>
+                    <a href="http://harrypotter.wikia.com/wiki/Marvolo_Gaunt%27s_Ring" target="_blank" class="list-group-item"><strong>Ring</strong></a>
+                </div>
 
-    <!--Look up how to make a link open in a NEW window and revise your link Done!!!!!!-->
+                <p class="book">Buy the book
+                    <a href="https://www.amazon.com/Harry-Potter-Half-Blood-Prince-Book/dp/0545582997" target="_blank">here!</a>
+                </p>
+            </div>
+            <!--Bootstrap has their own classes for making tables. Look up how to do that. Make your table with striped rows. Redo your hovers with Bootstrap classes. All of this is on W3Schools. -->
+            <div class="characters_table container">
+                <h4 class="characters">
+                    <p id="section4">
+                        The Main Characters of Half Blood Prince.
+                    </p>
+                </h4>
 
-    <p class="book">Buy the book
-        <a href="https://www.amazon.com/Harry-Potter-Half-Blood-Prince-Book/dp/0545582997" target="_blank">here!</a>
-    </p>
+                <table class="characters_name table table-bordered table-striped table table-hover table table-condensed">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Good guy or Bad Guy</th>
+                    </tr>
+                    <tr>
+                        <td>Harry</td>
+                        <td>Potter</td>
+                        <td class="blue">Good</td>
+                    </tr>
+                    <tr>
+                        <td>Ron</td>
+                        <td>Weasley</td>
+                        <td class="blue">Good</td>
+                    </tr>
+                    <tr>
+                        <td>Herimone</td>
+                        <td>Granger</td>
+                        <td class="blue">Good</td>
+                    </tr>
+                    <tr>
+                        <td>Albus</td>
+                        <td>Dumbeldore</td>
+                        <td class="gray">Good and Evil?</td>
+                        <tr>
+                            <td>Lord</td>
+                            <td>Voldemort</td>
+                            <td class="red">EVIL</td>
+                        </tr>
+                        <tr>
+                            <td>Severus</td>
+                            <td>Snape</td>
 
-    <!--Put the div that is around the table before the h4. Done!!!!!!-->
-    <div class="characters_table">
-        <h4 class="characters">
-            <p id="section4">
-                The Main Characters of Half Blood Prince.
-            </p>
-        </h4>
+                            <td class="blue">Good</td>
+                        </tr>
+                        <tr>
+                            <td>Draco</td>
+                            <td>Malfoy</td>
+                            <td class="red">Evil</td>
+                        </tr>
+                        <tr>
+                            <td>Horace</td>
+                            <td>Slughorn</td>
+                            <td class="blue">Good</td>
+                        </tr>
 
-        <!--The class of table on the tag table isn't a good way of naming classes. Give it a better name in case you have two tables in one website.  Done!!!!!!!-->
-        <table class="characters_name">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Good guy or Bad Guy</th>
-            </tr>
-            <tr>
-                <td>Harry</td>
-                <td>Potter</td>
-                <td class="blue">Good</td>
-            </tr>
-            <tr>
-                <td>Ron</td>
-                <td>Weasley</td>
-                <td class="blue">Good</td>
-            </tr>
-            <tr>
-                <td>Herimone</td>
-                <td>Granger</td>
-                <td class="blue">Good</td>
-            </tr>
-            <tr>
-                <td>Albus</td>
-                <td>Dumbeldore</td>
-                <td class="gray">Good and Evil?</td>
-                <tr>
-                    <td>Lord</td>
-                    <td>Voldemort</td>
-                    <td class="red">EVIL</td>
-                </tr>
-                <tr>
-                    <td>Severus</td>
-                    <td>Snape</td>
+                </table>
+                <p class="Snape">Learn all about the very deep and complex character that is
+                    <a href="http://harrypotter.wikia.com/wiki/Severus_Snape" target="_blank">Severus Snape</a>
+                </p>
 
-                    <td class="blue">Good</td>
-                </tr>
-                <tr>
-                    <td>Draco</td>
-                    <td>Malfoy</td>
-                    <td class="red">Evil</td>
-                </tr>
-                <tr>
-                    <td>Horace</td>
-                    <td>Slughorn</td>
-                    <td class="blue">Good</td>
-                </tr>
 
-        </table>
-        <p class="Snape">Learn all about the very deep and complex character that is
-            <a href="http://harrypotter.wikia.com/wiki/Severus_Snape" target="_blank">Severus Snape</a>
-        </p>
-        <!-- Time to practice adding links. Under the table, put in some text that says "To learn more about Snape, go here." Make the word here a link that opens in a new window to a website all about Snape! Done!!!!!!1 -->
+            </div>
+            <div class="copyright">
+                <p>
+                    This page was made with the magic of love by Kris J. Hays <i class="far fa-copyright"></i> 2018
+                </p>
+            </div>
 
-    </div>
-    <div class="copyright">
-        <p>
-            This page was made with the magic of love by Kris J. Hays <i class="far fa-copyright"></i> 2018
-        </p>
-    </div>
-    <!-- Time to add a copyright statement here. Add some text that says something like "Made with a wand by Kris J. Hays, 2018" - then we will add the copyright icon before the year. Go to the main page of W3Schools and click on Learn Icons on the right hand side. Then look at the tutorials about Font Awesome. You will want to go to Font Awesome to see their font library.Done!!!!!  -->
-
-    <!-- After the year in the copyright text - add your email. Look up how to do this on W3Schools. Done!!!!!!-->
-    <p id="email"></p>
-    <address>
+            <p id="email"></p>
+            <address>
     Created by <a href="mailto:KrisjHays@gmail.com">Kris Hays</a>
 </address>
-    <!-- When you have made all of these changes, I want you to figure out how to make a navigation bar. Look this up on W3Schools.-->
 
-    <!-- Don't forget to style everything-->
+            <!--Add your script tags for Bootstrap-->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.bundle.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>

@@ -3,20 +3,22 @@
 /*Write some comments in your code to show where your different sections are in the code... */
 
 body {
-    background-color: lightgrey;
+    background-color: gainsboro;
+    padding-top: 50px;
 
 }
-
+/*
 .navbar {
     list-style-type: none;
-    font-size: 25px;
+    font-size: 15px;
     float: left;
     position: fixed;
     border: 1px solid #555;
     background-color: #f1f1f1;
     padding: inherit;
 }
-
+*/
+/*
 li a {
     display: block;
     color: #000;
@@ -25,8 +27,8 @@ li a {
     border-bottom: 1px solid #555;
     color: red;
 }
-
-li a:hover {
+*/
+/*li a:hover {
     background-color: black;
     color: white;
 
@@ -69,13 +71,7 @@ li a:hover {
     font-family: 'Slabo 27px', serif;
 }
 
-.img2 {
-    display: block;
-    margin: auto;
-    width: 40%;
-    border: 2px solid black;
-    padding: 0px;
-}
+
 
 
 
@@ -98,17 +94,21 @@ a:hover {
 
 .favhor {
     text-align: center;
+    color: darkred;
     font-size: 40px;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: darkred;
     font-family: 'Risque', cursive;
 }
 
 .horcrux {
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     list-style-position: inside;
 
+}
+.book{
+    font-size: 20px;
 }
 
 /* This section contains the characters of the half blood prince along with a list.
@@ -118,12 +118,14 @@ a:hover {
     text-align: center;
     font-size: 45px;
     font-family: 'Risque', cursive;
+    color: red;
 }
-
+/*
 .characters_name {
     border-collapse: collapse;
 }
-
+*/
+/*
 .characters_name,
 td,
 th {
@@ -163,5 +165,5 @@ th {
 
 .copyright {
     font-size: 25px;
-    color: black;
+    
 }
